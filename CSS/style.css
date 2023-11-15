@@ -1,0 +1,157 @@
+/* ---------------------------------------- */
+/* FONT DE PE https://fonts.google.com/: "Poppins" */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+/* ---------------------------------------- */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #2D3142;
+  font-family: 'Poppins', sans-serif;
+  padding: 0 20px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-top: 20px;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  color: #FFFFFF;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.copyright{
+  color: #BFC0C0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.info{
+  color: #BFC0C0;
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+header p{
+  color: #BFC0C0;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.search-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 100%;
+  overflow: hidden;
+  max-width: 720px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.search-box input{
+  display: block;
+  outline: none;
+  border: none;
+  padding: 20px;
+  width: 100%;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+input::placeholder{
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.search-box:focus-within{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+  /* acest box-shadow a fost luat de pe https://getcssscan.com/css-box-shadow-examples */
+  transform: translateY(-3px);
+}
+
+#delete{
+  border: 0;
+  outline: 0;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: #EF8354;
+  color: #f3f3f3;
+  font-weight: 500;
+  cursor: pointer;
+  display: none;
+}
+/* ---------------------------------------- */
+/* JavaScript Clase + innerHTML */
+
+.results{
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.result{
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #4F5D75;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.result:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  /* acest box-shadow a fost luat de pe https://getcssscan.com/css-box-shadow-examples */
+}
+
+.result h3{
+  color: #ccc;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.result p{
+  color: #141414;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.result a{
+  display: inline-block;
+  padding: 12px;
+  width: 100%;
+  background-color: #EF8354;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.result a:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+  transform: translateY(-3px);
+}
